@@ -2,7 +2,7 @@
   "name": "aike-front-react-static",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chunmu.github.io/aike-front-react-static/",
+  "homepage": ".",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",

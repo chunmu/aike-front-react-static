@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Router history={history}>
-        <Route exact path="/">
+        <Route exact path="">
           <Main></Main>
         </Route>
         <Route exact path="/year2021">
