@@ -1133,6 +1133,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.2.0":
+  version "7.13.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.6.tgz#86e0fad6cbb46a680e21c1aa4748717a058d345a"
+  integrity sha512-Y/DEVhSQ91u27rxq7D0EH/sewS6+x06p/MgO1VppbDHMzYXLZrAR5cFjCom78e9RUw1BQAq6qJg6fXc/ep7glA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.12.13", "@babel/template@^7.3.3":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
@@ -3322,19 +3329,21 @@ chrome-trace-event@^1.0.2:
   dependencies:
     tslib "^1.9.0"
 
-chunmu-base@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/chunmu-base/-/chunmu-base-0.0.15.tgz#ef303e3e5d1e25aff863fbedcb951ccf628bdb3b"
-  integrity sha512-DPUTdDlQ+pczA+LSs1IQBRYeo/dccrm1EOSdBVF1ZK8lnwtGb+b/OjTtfSgz4tXEQ8rrqfP//icWUeyy9NLusQ==
+chunmu-base@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/chunmu-base/-/chunmu-base-0.0.22.tgz#5b93179551632f520a5c536cc38dcb6ee261de1a"
+  integrity sha512-T4JTFuqIhNUTduhrxQ3UXqOBHv8R1VG9bVQrWkhR71r0RWeqpAUu4SAv+hrA6cNR8H7ZZLlE8SHmvVv5qhGf+A==
 
-chunmu-swipe@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/chunmu-swipe/-/chunmu-swipe-0.0.15.tgz#672ad9ad76e77eba45ee9f044bbd0c0d58beddbb"
-  integrity sha512-i5yVpYASQ24nlgdVxOtbZ3WpheSacJB78umPxUpVzyd92fO5HFUt7uPuwh9/xm239ouyYYvNW3dC02YyslzGeA==
+chunmu-swipe@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/chunmu-swipe/-/chunmu-swipe-0.0.22.tgz#8ed1630bd4f607ff5af8c49402cd4b743a60fe6b"
+  integrity sha512-Xn8sGiQaHjJgfaQ98+Tu4LpM5lUgv28/eKBQONtT1toOYrLF8RD7lpOeWqhOYG5hn/F/doqgQ9f0kzMKztW9Mw==
   dependencies:
     "@types/react" "^17.0.2"
-    chunmu-base "^0.0.15"
+    chunmu-base "^0.0.22"
     react "^17.0.1"
+    react-event-listener "^0.6.6"
+    shallow-equal "^1.2.1"
 
 ci-info@^2.0.0:
   version "2.0.0"
@@ -9054,7 +9063,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9606,6 +9615,15 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+
+react-event-listener@^0.6.6:
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/react-event-listener/-/react-event-listener-0.6.6.tgz#758f7b991cad9086dd39fd29fad72127e1d8962a"
+  integrity sha512-+hCNqfy7o9wvO6UgjqFmBzARJS7qrNoda0VqzvOuioEpoEXKutiKuv92dSz6kP7rYLmyHPyYNLesi5t/aH1gfw==
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+    prop-types "^15.6.0"
+    warning "^4.0.1"
 
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -10344,6 +10362,11 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallow-equal@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
+  integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
 shallowequal@^1.0.2, shallowequal@^1.1.0:
   version "1.1.0"

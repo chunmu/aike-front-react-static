@@ -1,5 +1,5 @@
 import React from 'react';
-import Swipe, { defaultProps } from 'chunmu-swipe';
+import { defaultProps, AutoPlaySwipe, autoPlayDefaultProps } from 'chunmu-swipe';
 import cx from 'classnames';
 import styles from './main.module.less';
 
@@ -7,8 +7,9 @@ const Main: React.FC = () => {
   return (
     <div className={styles.main}>
       <div className={styles.bannerContainer}>
-        <Swipe {...{
+        <AutoPlaySwipe {...{
           ...defaultProps,
+          ...autoPlayDefaultProps,
           enableMouseEvents: true
         }}>
           <div className={cx(styles.banner, styles.banner1)}>
@@ -25,7 +26,7 @@ const Main: React.FC = () => {
           </div>
           <div className={cx(styles.banner, styles.banner7)}>
           </div>
-        </Swipe>
+        </AutoPlaySwipe>
       </div>
     </div>
   );
