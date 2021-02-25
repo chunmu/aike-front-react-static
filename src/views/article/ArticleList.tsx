@@ -5,7 +5,7 @@ import reduxSaga from '../../assets/images/redux-saga.png';
 import avatar from '../../assets/images/avatar.jpeg';
 import styles from './ArticleList.module.less';
 
-
+console.log(avatar)
 interface ArticleItem {
    title: string,
    id: string,

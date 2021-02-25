@@ -14,15 +14,15 @@ function App() {
   return (
     <div className={styles.App}>
       <Router history={history}>
-        <Route exact path="" component={Empty}>
+        <Route exact path="/aike-front-react-static" component={Empty}>
         </Route>
-        <Route exact path="/main" component={Main}>
+        <Route exact path="/aike-front-react-static/main" component={Main}>
         </Route>
-        <Route exact path="/article" component={ArticleList}>
+        <Route exact path="/aike-front-react-static/article" component={ArticleList}>
         </Route>
-        <Route exact path="/article/:id" component={Article}>
+        <Route exact path="/aike-front-react-static/article/:id" component={Article}>
         </Route>
-        <Route exact path="/year2021">
+        <Route exact path="/aike-front-react-static/year2021">
           <Year2021></Year2021>
         </Route>
       </Router>

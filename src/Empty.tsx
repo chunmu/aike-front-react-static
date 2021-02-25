@@ -5,7 +5,7 @@ const Main: React.FC<RouterProps> = (props: RouterProps) => {
   const router = useHistory();
   useEffect(() => {
     if (router) {
-      router.push('/main')
+      router.push('/aike-front-react-static/main')
     }
   }, [router])
   return (

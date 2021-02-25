@@ -71,7 +71,7 @@ const Main: React.FC<RouterProps> = (props: RouterProps) => {
     },
   ];
   function handleClick(item: FenceItem) {
-    props.history.push('/article')
+    props.history.push('/aike-front-react-static/article')
   }
   return (
     <div className={styles.main}>
