@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Router history={history}>
-        <Route exact path="/" component={Main}>
+        <Route exact path="/index" component={Main}>
         </Route>
         <Route exact path="/article" component={ArticleList}>
         </Route>
