@@ -1,0 +1,2 @@
+(this["webpackJsonpaike-front-react-static"]=this["webpackJsonpaike-front-react-static"]||[]).push([[214],{448:function(n,s){Prism.languages.jsonp=Prism.languages.extend("json",{punctuation:/[{}[\]();,.]/}),Prism.languages.insertBefore("jsonp","punctuation",{function:/[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*\()/})}}]);
+//# sourceMappingURL=214.1cd0061e.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpaike-front-react-static"]=this["webpackJsonpaike-front-react-static"]||[]).push([[408],{642:function(a,t){Prism.languages.t4=Prism.languages["t4-cs"]=Prism.languages["t4-templating"].createT4("csharp")}}]);
+//# sourceMappingURL=408.eeaafc1f.chunk.js.map

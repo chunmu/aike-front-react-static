@@ -1,18 +1,23 @@
 import React from 'react';
 import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import Main from './Main';
+import Main from './views/main/Main';
 import Year2021 from './views/year2021/Year2021';
-import './App.css';
-
+import Article from './views/article/Article';
+import ArticleList from './views/article/ArticleList';
+import 'antd/dist/antd.css';
+import styles from  './App.module.less';
 
 const history = createBrowserHistory();
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Router history={history}>
-        <Route exact path="">
-          <Main></Main>
+        <Route exact path="/" component={Main}>
+        </Route>
+        <Route exact path="/article" component={ArticleList}>
+        </Route>
+        <Route exact path="/article/:id" component={Article}>
         </Route>
         <Route exact path="/year2021">
           <Year2021></Year2021>
