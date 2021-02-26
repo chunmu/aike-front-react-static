@@ -9,7 +9,7 @@
   height: 1000px;
   margin: auto;
   position: relative;
-  // background-image: url('../../assets/images/new-year-bg.jpg');
+  background-image: url('../../assets/images/new-year-bg.jpg');
   background-size: cover;
 }
 
@@ -30,34 +30,79 @@
   position: absolute;
 }
 .twelfthMonthArrow {
-  width: 160px;
+  width: 200px;
   top: 180px;
   left: 460px;
 }
 
 .youjiaoArrow {
   width: 160px;
-  top: 120px;
+  top: 200px;
   right: 440px;
+}
+.chuxiArrow {
+  width: 200px;
+  top: 450px;
+  left: 260px;
+}
+
+.chunjieArrow {
+  width: 200px;
+  top: 420px;
+  left: 460px;
+}
+
+.yuanxiaoArrow {
+  width: 200px;
+  top: 740px;
+  left: 460px;
+}
+
+.niuyearArrow {
+  width: 200px;
+  top: 720px;
+  right: 440px;
+}
+
+.yanhuaArrow {
+  width: 200px;
+  top: 420px;
+  left: 460px;
 }
 
 .commonTitle {
   color: @yellow;
+  width: 160px;
   position: absolute;
+  font-size: 17px;
+  font-weight: 600;
 }
 .twelfthMonthTitle {
-  width: 160px;
   top: 150px;
-  left: 440px;
-  font-size: 17px;
-  font-weight: 600;
+  left: 500px;
 }
 .youjiaoTitle {
-  width: 160px;
-  top: 90px;
-  right: 440px;
-  font-size: 17px;
-  font-weight: 600;
+  top: 170px;
+  right: 340px;
+}
+.chuxiTitle {
+  top: 420px;
+  right: 340px;
+}
+
+.chunjieTitle {
+  top: 390px;
+  left: 500px;
+}
+
+.yuanxiaoTitle {
+  top: 710px;
+  left: 480px;
+}
+
+.niuyearTitle {
+  top: 690px;
+  left: 380px;
 }
 
 .twelfthMonth {
@@ -69,14 +114,100 @@
 
 .youjiao {
   position: absolute;
-  top: 50px;
-  right: 580px;
+  top: 100px;
+  right: 520px;
   width: 200px;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;  
+  }
+}
+
+.chuxi {
+  position: absolute;
+  top: 360px;
+  right: 580px;
+  width: 280px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;  
+  }
+}
+
+.chunjie {
+  position: absolute;
+  top: 360px;
+  left: 580px;
+  width: 300px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.yuanxiao {
+  position: absolute;
+  top: 640px;
+  left: 580px;
+  width: 300px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.niuyear {
+  position: absolute;
+  top: 640px;
+  right: 580px;
+  width: 300px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai1 {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai2 {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
 }
 
 .imgCard {
   text-align: center;
 }
+
 .imageContainer {
   color: @yellow;
 }

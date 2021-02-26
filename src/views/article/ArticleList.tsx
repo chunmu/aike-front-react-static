@@ -5,7 +5,6 @@ import reduxSaga from '../../assets/images/redux-saga.png';
 import avatar from '../../assets/images/avatar.jpeg';
 import styles from './ArticleList.module.less';
 
-console.log(avatar)
 interface ArticleItem {
    title: string,
    id: string,
@@ -16,7 +15,7 @@ interface State {
   list: ArticleItem[],
 }
 
-
+const BASE_URL = process.env.REACT_APP_BASE_URL
 
 class Article extends React.Component<State> {
   state = {
@@ -72,7 +71,7 @@ class Article extends React.Component<State> {
               <List.Item.Meta
                 avatar={<Avatar src={avatar} />}
                 title={
-                  <Link to={`/article/${item.id}`}>
+                  <Link to={`${BASE_URL}/article/${item.id}`}>
                     {item.title}
                   </Link>
                 }

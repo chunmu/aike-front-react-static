@@ -9,20 +9,22 @@ import ArticleList from './views/article/ArticleList';
 import 'antd/dist/antd.css';
 import styles from  './App.module.less';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL
+
 const history = createBrowserHistory();
 function App() {
   return (
     <div className={styles.App}>
       <Router history={history}>
-        <Route exact path="/aike-front-react-static" component={Empty}>
+        <Route exact path={`${BASE_URL}/`} component={Empty}>
         </Route>
-        <Route exact path="/aike-front-react-static/main" component={Main}>
+        <Route exact path={`${BASE_URL}/main`} component={Main}>
         </Route>
-        <Route exact path="/aike-front-react-static/article" component={ArticleList}>
+        <Route exact path={`${BASE_URL}/article`} component={ArticleList}>
         </Route>
-        <Route exact path="/aike-front-react-static/article/:id" component={Article}>
+        <Route exact path={`${BASE_URL}/article/:id`} component={Article}>
         </Route>
-        <Route exact path="/aike-front-react-static/year2021">
+        <Route exact path={`${BASE_URL}/year2021`}>
           <Year2021></Year2021>
         </Route>
       </Router>
