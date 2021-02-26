@@ -12,11 +12,12 @@ import styles from  './App.module.less';
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
 const history = createBrowserHistory();
+const homePath = BASE_URL ? '' : `${BASE_URL}/`
 function App() {
   return (
     <div className={styles.App}>
       <Router history={history}>
-        <Route exact path={`${BASE_URL}/`} component={Empty}>
+        <Route exact path={homePath} component={Empty}>
         </Route>
         <Route exact path={`${BASE_URL}/main`} component={Main}>
         </Route>
