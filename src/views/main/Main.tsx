@@ -14,6 +14,8 @@ import boshi from '../../assets/svg/boshi.svg';
 // https://www.iconfont.cn/search/index?searchType=icon&q=%E5%8D%9A%E5%A3%AB&page=1&fromCollection=-1&fills=&tag=
 import styles from './main.module.less';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL
+
 const Main: React.FC<RouterProps> = (props: RouterProps) => {
   const fenceRows: FenceRows[] = [
     {
@@ -71,7 +73,7 @@ const Main: React.FC<RouterProps> = (props: RouterProps) => {
     },
   ];
   function handleClick(item: FenceItem) {
-    props.history.push('/aike-front-react-static/article')
+    props.history.push(`${BASE_URL}/article`)
   }
   return (
     <div className={styles.main}>

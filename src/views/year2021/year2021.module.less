@@ -1,4 +1,5 @@
 @yellow: #efdf16;
+@light-yellow: #f8ef6c;
 
 .year2021Container {
   padding-top: 50px;
@@ -11,6 +12,7 @@
   position: relative;
   background-image: url('../../assets/images/new-year-bg.jpg');
   background-size: cover;
+  overflow: hidden;
 }
 
 .mainLine {
@@ -77,39 +79,84 @@
   font-size: 17px;
   font-weight: 600;
 }
+.commonDesc {
+  width: 160px;
+  position: absolute;
+  font-size: 12px;
+  color: @light-yellow;
+}
+
 .twelfthMonthTitle {
   top: 150px;
   left: 500px;
+}
+.twelfthMonthDesc {
+  top: 190px;
+  left: 480px;
+  width: 100px;
 }
 .youjiaoTitle {
   top: 170px;
   right: 340px;
 }
+.youjiaoDesc {
+  top: 290px;
+  left: 350px;
+  width: 100px;
+}
 .chuxiTitle {
   top: 420px;
   right: 340px;
+}
+.chuxiDesc {
+  top: 460px;
+  left: 350px;
+  width: 100px;
 }
 
 .chunjieTitle {
   top: 390px;
   left: 500px;
 }
+.chunjieDesc {
+  top: 430px;
+  left: 480px;
+  width: 100px;
+}
 
 .yuanxiaoTitle {
   top: 710px;
   left: 480px;
+}
+.yuanxiaoDesc {
+  top: 750px;
+  left: 480px;
+  width: 100px;
 }
 
 .niuyearTitle {
   top: 690px;
   left: 380px;
 }
+.niuyearDesc {
+  top: 730px;
+  left: 350px;
+  width: 100px;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 5px 4px @yellow;
+}
 
 .twelfthMonth {
   position: absolute;
   top: 90px;
-  left: 580px;
+  left: 600px;
   width: 200px;
+  transform: rotate(15deg);
+  img {
+    .box-shadow()
+  }
 }
 
 .youjiao {
@@ -119,10 +166,13 @@
   width: 200px;
   overflow: hidden;
   z-index: 1;
+  padding: 10px;
+  transform: rotate(-15deg);
   img {
     display: block;
     border-radius: 5px;
-    width: 100%;  
+    width: 100%;
+    .box-shadow()
   }
 }
 
@@ -132,10 +182,13 @@
   right: 580px;
   width: 280px;
   overflow: hidden;
+  padding: 10px;
+  transform: rotate(-15deg);
   img {
     display: block;
     border-radius: 5px;
-    width: 100%;  
+    width: 100%;
+    .box-shadow()
   }
 }
 
@@ -145,10 +198,13 @@
   left: 580px;
   width: 300px;
   overflow: hidden;
+  padding: 10px;
+  transform: rotate(25deg);
   img {
     display: block;
     border-radius: 5px;
     width: 100%;
+    .box-shadow()
   }
 }
 
@@ -158,10 +214,13 @@
   left: 580px;
   width: 300px;
   overflow: hidden;
+  padding: 10px;
+  transform: rotate(-25deg);
   img {
     display: block;
     border-radius: 5px;
     width: 100%;
+    .box-shadow()
   }
 }
 
@@ -171,16 +230,52 @@
   right: 580px;
   width: 300px;
   overflow: hidden;
+  padding: 10px;
+  transform: rotate(25deg);
   img {
     display: block;
     border-radius: 5px;
     width: 100%;
+    .box-shadow()
+  }
+}
+
+.helpful {
+  position: absolute;
+  top: 200px;
+  right: 680px;
+  width: 150px;
+  overflow: hidden;
+  padding: 10px;
+  transform: rotate(15deg);
+  z-index: 1;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    .box-shadow()
+  }
+}
+
+.redpag {
+  position: absolute;
+  top: 520px;
+  right: 580px;
+  width: 150px;
+  overflow: hidden;
+  padding: 10px;
+  transform: rotate(25deg);
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    .box-shadow()
   }
 }
 
 .sucai1 {
   position: absolute;
-  bottom: 0;
+  bottom: 600px;
   right: 50px;
   width: 100px;
   overflow: hidden;
@@ -201,6 +296,99 @@
     display: block;
     border-radius: 5px;
     width: 100%;
+  }
+}
+
+.sucai3 {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai4 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai5 {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai6 {
+  position: absolute;
+  top: 520px;
+  right: 200px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai7 {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sucai8 {
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+  width: 100px;
+  overflow: hidden;
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.sign {
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+  width: 200px;
+  overflow: hidden;
+  p {
+    color: @yellow;
+    line-height: 31px;
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
   }
 }
 
